@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>뭐야, 자게 해줘요!</title>
+
+	<link rel="stylesheet" type="text/css" href="css/hall_style.css">
+	<link rel="stylesheet" type="text/css" href="css/comcla_style.css">
+	<link rel="stylesheet" type="text/css" href="css/recess_style.css">
+
+<body>
+<!-- 첫화면 --> 	
+<div id="main">
+		<p>
+		이제 100세 인생이라는데, 너무 쉬지 않고 달리는거 아냐?<br>
+		인생은 길고, 청춘은 짧은데 금방 지치면 오히려 손해지.<br>
+		쉬엄쉬엄 가자고! 당장 자러가자!<br>
+		수많은 유혹과 장애물을 물리치고, 얼른 침대로 가자!
+
+		</p>
+		<p style="margin-top: 80px;">침대로 가기 위한 치열한 사투!</p>
+		<p id="play">뭐야, 자게 해줘요!</p>
+
+	</div>
+
+<!-- 홀~!~! --> 	
+<div id="map1" class="pt-page pt-page-1">
+	<img src="img/comdoor.png" id="cod">
+	<img src="img/professor.png" id="pro">
+	<img src="img/friend.png" id="fri1">
+	<img src="img/rest.png" id="rest">
+
+  <!-- 친구파트 --> 	
+	<!-- 처음 나오는 텍스트 --> 	
+	<div class="textbox" id="talk">
+		<p class="maintext">"공부한다고 도서관 간거 아니었냐? 왜 여기있어?"<br>
+		*과 동기가 당신에게 말을 걸었다.</p>
+		<div class="choice">
+			<div class="answer">
+				<p id="Y1">
+				-답변한다.
+				</p>
+			</div>
+			<div class="answer">
+				<p id="N1">
+				-무시한다.
+			</p>
+			</div>
+		</div>
+	</div>
+	<!-- 긍정 --> 	
+	<div class="textbox" id="nextyes1">
+		<p class="maintext">*당신은 도서관에서 청춘을 소비하기엔 너무 아까워서 쉬러간다고 동기에게 설명했다.<br><br>
+"엥? 그럼 쉬는게 아니라 한바탕 뒤집어지게 놀아야지! 오늘 PARTY TONIGHT 고고?"</p>
+		<button class="nextbutton" id="nextbutton1">
+			다음▶
+		</button>
+	</div>
+
+	<div class="textbox" id="nextnextyes1">
+	<p class="maintext">*당신은 고민해보겠다고 했다.<br>
+		"빼지 말고~ 응?"<br><br>
+	</p>
+		<div class="choice">
+			<div class="answer">
+				<a href="badend_fri.html" class="aN2"><p id="NY1">
+				-좋아. 놀자!
+				</p></a>
+			</div>
+			<div class="answer">
+				<p id="NN1">
+				-미안. 다음에 놀자.
+			</p>
+			</div>
+		</div>
+	</div>
+	<div class="textbox" id="nextnextno1">
+		<p class="maintext">"아쉽구만.. 그럼 나 혼자라도 놀아야지!"<br>
+		*동기는 혼자 노래를 흥얼거리며 어딘가로 사라졌다.</p>
+		<button class="nextbutton" id="nextnextout">
+			나가기
+		</button>
+	</div>
+	<!-- 부정 --> 
+	<div class="textbox" id="nextno1">
+		<p class="maintext">*친구는 머쓱해보인다.</p>
+		<button class="out" id="outn1">
+			나가기
+		</button>
+	</div>
+
+
+	<!-- 교수님파트 --> 	
+
+	<!-- 처음 나오는 텍스트 --> 	
+	<div class="textbox" id="talk2">
+		<p class="maintext">
+			"**이구나, 학교 생활은 잘 하고 있니? 수업은 힘든 거 없고?"
+		<br>*교수님이 당신에게 말을 걸었다</p>
+		<div class="choice">
+			<div class="answer">
+				<a href="badend_pro.html" class="aN2"><p id="Y2">
+				-그럼요. 친구들 하고도 두루두루 친해요.
+				</p></a>
+			</div>
+			<div class="answer">
+				<p id="M2">
+					-아.. 네.
+				</p>
+			</div>
+			<div class="answer">
+				<a href="badend_pro2.html" class="aN2"><p id="N2">
+				-너무 힘들어요. 특히 교수님의 수업은 최악이에요.
+			</p></a>
+			</div>
+			
+		</div>
+	</div>
+	<!-- 중간 --> 
+	<div class="textbox" id="nextmid2">
+		<p class="maintext">*당신의 단답의 교수님은 많이 뻘쭘하신가보다.
+			<br>*교수님은 남은 학교생활을 잘하라는 말을 남기시고는 연구실로 가셨다</p>
+		<button class="out" id="outm2">
+			나가기
+		</button>
+	</div>
+<!-- 진엔딩 -->
+	<button class="gohome" id="gohomereal">
+		◀
+	</button>
+	<div class="textbox" id="homereal1">
+		<p class="maintext">*이제 집으로 갈까?</p>
+		<div class="choice">
+			<div class="answer">
+				<a href="realend.html" class="aN2"><p id="ghrY1">
+				-집에 갈래.
+				</p></a>
+			</div>
+			<div class="answer">
+				<p id="ghrN1">
+				-아직 안갈래.
+			</p>
+			</div>
+		</div>
+	</div>
+<!-- 낮잠 노멀엔딩 --> 
+	<button class="gohome" id="gohomeno">
+		◀
+		</button>
+	<div class="textbox" id="homenormal1">
+		<p class="maintext">*이제 집으로 갈까?</p>
+		<div class="choice">
+			<div class="answer">
+				<a href="normalend_nap.html" class="aN2"><p id="ghnY1">
+				-집에 갈래.
+				</p></a>
+			</div>
+			<div class="answer">
+				<p id="ghnN1">
+				-아직 안갈래.
+			</p>
+			</div>
+		</div>
+	</div>
+<!-- 핸드폰 노멀엔딩 --> 
+	<button class="gohome" id="gohomenor">
+		◀
+	</button>
+	<div class="textbox" id="homenormal2">
+		<p class="maintext">*이제 집으로 갈까?</p>
+		<div class="choice">
+			<div class="answer">
+				<a href="normalend_phone.html" class="aN2"><p id="ghnY2">
+				-집에 갈래.
+				</p></a>
+			</div>
+			<div class="answer">
+				<p id="ghnN2">
+				-아직 안갈래.
+			</p>
+			</div>
+		</div>
+	</div>
+
+</div>
+	
+
+
+<!-- 컴퓨터실 -->
+<div id="map2">
+		<img src="img/flower.png" id="flo">
+		<img src="img/comoff.png" id="off1">
+		<img src="img/comonpro.png" id="onpro">
+		<img src="img/comperson.png" id="person">
+		<img src="img/comoff.png" id="off2">
+		<img src="img/comonon.png" id="on1">
+		<img src="img/comoff.png" id="off3">
+		<img src="img/comon.png" id="on2">
+		<img src="img/comoff.png" id="off4">
+		<img src="img/memo.png" id="mem2">
+		<img src="img/memo.png" id="mem">
+		<img src="img/arrow.png" id="ar">
+		<img src="img/phone.png" id="pho">
+		<div id="outcom">나가기</div>
+
+		<div class="textbox" id="textcom1">
+		<p class="maintext">*꽃이 예쁘게 피어있다. 구경할까?</p>
+		<div class="choice">
+			<div class="answer">
+				<a href="badend_flo.html" class="aN2"><p id="CY1">
+				-구경할래.
+				</p></a>
+			</div>
+			<div class="answer">
+				<p id="CN1">
+				-다음에 볼래.
+			</p>
+			</div>
+		</div>
+	</div>
+	<div class="textbox" id="textcom2">
+		<p class="maintext">*이 컴퓨터는 꺼져있다. 켜볼까?</p>
+		<div class="choice">
+			<div class="answer">
+				<p id="CY2">
+				-켜볼래.
+				</p>
+			</div>
+			<div class="answer">
+				<p id="CN2">
+				-그냥 둘래.
+			</p>
+			</div>
+		</div>
+	</div>
+	<div class="textbox" id="textcom3">
+		<p class="maintext">
+			"타닥..타닥.."<br><br>
+			*과제를 열심히 하고 있는 하다.<br>
+			*근데 갑자기 고양이 사진은 왜 저장하는거지?</p>
+	</div>
+	<div class="textbox" id="textcom4">
+		<p class="maintext">*이 컴퓨터는 꺼져있다.</p>
+	</div>
+	<div class="textbox" id="textcom5">
+		<p class="maintext">*이 컴퓨터는 켜져있다.</p>
+	</div>
+	<div class="textbox" id="textcom6">
+		<p class="maintext">*이 컴퓨터는 꺼져있다.</p>
+	</div>
+	<div class="textbox" id="textcom7">
+		<p class="maintext">*이 컴퓨터는 켜져있다. 꺼볼까?</p>
+		<div class="choice">
+			<div class="answer">
+				<p id="CY3">
+				-꺼볼래.
+				</p>
+			</div>
+			<div class="answer">
+				<p id="CN3">
+				-그냥 둘래.
+			</p>
+			</div>
+		</div>
+	</div>
+	<div class="textbox" id="textcom8">
+		<p class="maintext">*쪽지가 붙어 있다. 읽어볼까?</p>
+		<div class="choice">
+			<div class="answer">
+				<p id="CY4">
+				-읽을래.
+				</p>
+			</div>
+			<div class="answer">
+				<p id="CN4">
+				-나중에 읽을래.
+			</p>
+			</div>
+		</div>
+	</div>
+	<div class="textbox" id="textcom8next">
+		<p class="maintext" style="text-align: center;">※분실물※<br><br>핸드폰 주인만 가져갈 것!</p>
+		<button class="nextbutton" id="nextmombutton">
+			다음▶
+		</button>
+	</div>
+	<div class="textbox" id="textcom8nextne">
+		<p class="maintext">*당신은 핸드폰을 잃어버리는 바보가 세상에 어딨냐고 속으로 비웃으며 남겨진 핸드폰을 보았다.<br><br>...당신의 핸드폰이다. 가져갈까?</p>
+			<div class="choice">
+			<div class="answer">
+				<p id="CY5">
+				-가져갈래.
+				</p>
+			</div>
+			<div class="answer">
+				<p id="CN5">
+				-나중에 가져갈래.
+			</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="textbox" id="textcom9">
+		<p class="maintext">*누군가 바탕화면을 교수님 사진으로 바꿔 놓았다.</p>
+			</div>
+	<!-- 컴퓨터실 화살표 가리개 --> 
+	<div style="width: 55px; height: 55px; background: black; position: absolute; left: -9%; top: 300px;">
+	</div>
+</div>
+
+<!-- 과방 -->
+<div id="map3">
+	<img src="img/flower_re.png" id="flo2">
+	<img src="img/window.png" id="win">
+	<img src="img/sofa2.png" id="sofa1">
+	<img src="img/sofa.png" id="sofa2">
+	<img src="img/sofa.png" id="sofa3">
+	<img src="img/desk.png" id="desk1">
+	<img src="img/desk.png" id="desk2">
+	<img src="img/desk_draw.png" id="desk3">
+	<img src="img/friend2.png" id="fri2">
+	<div class="outrescl" id="outres">나가기</div>
+	<div class="outrescl" id="outres2">나가기</div>
+
+	<div class="textbox" id="textre1">
+		<p class="maintext">*꽃이 예쁘게 피어있다. 구경할까?</p>
+		<div class="choice">
+			<div class="answer">
+				<a href="badend_flo.html" class="aN2"><p id="RY1">
+				-구경할래.
+				</p></a>
+			</div>
+			<div class="answer">
+				<p id="RN1">
+				-다음에 볼래.
+			</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="textbox" id="textre2">
+		<p class="maintext">*다른 과 건물이 보인다.</p>
+	</div>
+
+	<div class="textbox" id="textre3">
+		<p class="maintext">*누군가 자고 있다.</p>
+	</div>
+
+	<div class="textbox" id="textre4">
+		<p class="maintext">*편안해 보이는 소파다. 한숨 잘까?</p>
+		<div class="choice">
+			<div class="answer">
+				<p id="RY2">
+				-좋아.
+				</p>
+			</div>
+			<div class="answer">
+				<p id="RN2">
+				-아니.
+			</p>
+			</div>
+		</div>
+	</div>
+	<div class="textbox" id="nextRY2">
+		<p class="maintext">*...침대에서 자는 것 보다는 불편했지만 잘 잤다.</p>
+		<button class="out" id="outRY2">
+			나가기
+		</button>
+	</div>
+	<div class="textbox" id="textre3s">
+		<p class="maintext">*다시 눕기는 좀 그런 듯 하다.</p>
+	</div>
+
+	<div class="textbox" id="textre5">
+		<p class="maintext">*넓은 책상이다.</p>
+	</div>
+
+	<div class="textbox" id="textre6">
+		<p class="maintext">*넓은 책상이다. 낙서해볼까?</p>
+		<div class="choice">
+			<div class="answer">
+				<p id="RY4">
+				-좋아.
+				</p>
+			</div>
+			<div class="answer">
+				<p id="RN4">
+				-아니.
+			</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="textbox" id="textre7">
+		<p class="maintext">*누가 그렸는지는 모르겠지만 참 잘 그렸다.</p>
+	</div>
+
+	<div class="textbox" id="textre8">
+		<p class="maintext">"너 지금 학교 책상에 낙서한거야?"
+			<br>*춤신춤왕 길막충 동기가 당신에게 말을 걸었다.
+			<br>"똑바로 대답할 때까지 문에서 안비켜줄거야!"</p>
+		<div class="choice">
+			<div class="answer">
+				<p id="RY5">
+				-맞아.. 내가 했어..
+				</p>
+			</div>
+			<div class="answer">
+				<p id="RN5">
+				-뭐? 내가 안했어!
+			</p>
+			</div>
+		</div>
+	</div>
+	<div class="textbox" id="textre9">
+		<p class="maintext">*당신은 솔직하게 사실을 인정했다.
+			<br>춤신춤왕 길막충 동기는 당신의 솔직함에 표정을 풀었다.
+			<br>"낙서 지우는거 도와줄 테니까 다음부터는 그러지마~"</p>
+			<button class="out" id="outred">
+			나가기
+		</button>
+	</div>
+	<div class="textbox" id="textre10">
+		<p class="maintext">*당신은 본인이 한 것이 아니라며 시치미를 뗐다.
+			<br>"거짓말 하지 마. 내가 아까 다 봤어."</p>
+		<div class="choice">
+			<div class="answer">
+				<p id="RY7">
+				-맞아.. 내가 했어..
+				</p>
+			</div>
+			<div class="answer">
+				<a href="badend_dance.html" class="aN2"><p id="RN7">
+				-잘못 본거 아냐? 내가 그런거 아니라니까?
+			</p></a>
+			</div>
+		</div>
+	</div>
+
+	<!-- 과 방화살표 가리개 --> 
+	<div style="width: 55px; height: 55px; background: black; position: absolute; left: -9%; top: 300px;">
+	</div>
+</div>
+
+
+
+
+
+<!-- 사운드 --> 
+<audio id="doorsound">
+	  <source src="door.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="frisound">
+	  <source src="seven_twenty.mp3" type="audio/mpeg">
+</audio>
+<audio id="prosound">
+	  <source src="lazy_river_rag.mp3" type="audio/mpeg">
+</audio>
+<audio id="keyboard">
+	  <source src="computer_keyboard.mp3" type="audio/mpeg">
+</audio>
+<audio id="comon">
+	  <source src="computer_on.mp3" type="audio/mpeg">
+</audio>
+<audio id="comoff">
+	  <source src="computer_off.mp3" type="audio/mpeg">
+</audio>
+<audio id="heal">
+	  <source src="pokemon.mp3" type="audio/mpeg">
+</audio>
+<audio id="draw">
+	  <source src="scribbling.mp3" type="audio/mpeg">
+</audio>
+<audio id="swipe">
+	  <source src="swipe.mp3" type="audio/mpeg">
+</audio>
+<audio id="bgmf">
+	  <source src="bgm.mp3" type="audio/mpeg">
+</audio>
+<audio id="clean">
+	  <source src="cleaning.mp3" type="audio/mpeg">
+</audio>
+<audio id="sleepbgm">
+	  <source src="sleep.mp3" type="audio/mpeg">
+</audio>
+<audio id="pros">
+	  <source src="prostep.mp3" type="audio/mpeg">
+</audio>
+<audio id="fris">
+	  <source src="fristep.mp3" type="audio/mpeg">
+</audio>
+
+<script type="text/javascript" src="js/map1.js"></script>
+<script type="text/javascript" src="js/map2.js"></script>
+<script type="text/javascript" src="js/map3.js"></script>
+<script type="text/javascript">
+	cod.onclick = function(){
+		map2.style.display = "block";
+		doorsound.play();
+	}
+	outcom.onclick = function(){
+		map2.style.display = "none";
+		doorsound.play();
+	}
+	rest.onclick = function(){
+		map3.style.display = "block";
+		doorsound.play();
+	}
+	outres.onclick = function(){
+		map3.style.display = "none";
+		doorsound.play();
+	}
+</script>
+
+</body>
+</html>

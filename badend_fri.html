@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>뭐야, 자게 해줘요!</title>
+	<style type="text/css">
+		
+@font-face { font-family: 'DungGeunMo'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+body, div, h1, p{margin: 0;}
+body{ position: relative; background: black;}
+h1, p{font-family: 'DungGeunMo'; color: white;}
+p{line-height: 22px; word-break: keep-all;}
+
+#nha{
+	position: absolute;
+	width: 400px;
+	top: 250px;
+	left: calc(50% - 200px);
+	text-align: center;
+}
+#nha:hover{
+	position: absolute;
+	font-size: 20px;
+	width: 500px;
+	top: 250px;
+	left: calc(50% - 250px);
+	text-align: center;
+	
+}
+#main{background: black;
+	width: 400px;
+	height: 450px;
+	position: absolute;
+	top: 60px;
+	left: calc(50% - 200px);
+	display: none;
+}
+
+#replay{
+	width: 80px;
+	height: 25px;
+	background: black;
+	font-family: 'DungGeunMo';
+	color: white;
+	border: none;
+	outline: none;
+	position: absolute;
+	text-align: center;
+	text-decoration: none;
+	bottom: 1%;
+	left: calc(50% - 40px);
+	padding-top: 10px;
+}
+#replay:hover{
+background: white;
+color: black;
+}
+
+	</style>
+</head>
+<body>
+	<div id="nha">
+		<p>"좋아. 놀자!"</p>
+	</div>
+
+	<div id="main">
+		<p>
+		*당신은 결국 동기와 함께 PARTY TONIGHT을 하기로 했다. 동기는 둘이서만 놀면 재미가 없으니 다른 친구들도 함께 불러 놀자 했다.<br><br>
+
+		"마셔마셔~~ 빈 잔은 얼른 채우자고~~"<br><br>
+		"어? **이 잔이 비었네? 왜 말 안했어~"<br><br>
+		*당신은 오가는 잔을 보며 정신없이 PARTY TONIGHT을 보냈다. 체력이 떨어져 갈수록 창밖은 밝아진다...
+		</p>
+		<p style="text-align: center; margin-top: 30px; color: gray;">
+		**동기와 밤새 놀아서 배드엔딩**
+	</p>
+		<a href="index.html"><div id="replay">다시 시작</div></a>
+
+	</div>
+	<audio id="badend">
+	  <source src="miniscule_planet.mp3" type="audio/mpeg">
+	</audio>
+<script type="text/javascript">
+	nha.onclick = function(){
+		main.style.display = "block";
+		badend.play();
+	}
+</script>
+</body>
+</html>

@@ -1,0 +1,157 @@
+
+@font-face { font-family: 'DungGeunMo'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+body, div, h1, p{margin: 0;}
+body{ position: relative; background: black;}
+h1, p{font-family: 'DungGeunMo'; color: white;}
+p{line-height: 22px;}
+
+#map2{background: url('../img/comclass.png'); width: 600px; height: 450px;
+position: absolute;
+top: 60px;
+left: calc(50% - 300px);
+display: none;
+}
+#mem2{
+	position: absolute;
+	top: 19.5%;
+	left: 23%;
+}
+
+#mem{
+	position: absolute;
+	top: 19.5%;
+	left: 23%;
+}
+#mem:hover{
+	width: 30px;
+	top: 19%
+	left:22.5%;
+}
+#pho{
+	position: absolute;
+	top: 25.2%;
+	left: 20%;
+}
+#ar{
+	position: absolute;
+	top: 24%;
+	left: 23%;
+}
+
+#flo {
+	position: absolute;
+	right: 4.65%;
+	top: 9.45%;
+	}
+
+#flo:hover{width: 105px;
+	right: 4.2%;
+	top: 8.8%;
+}
+
+#off1{
+	position: absolute;
+	left: 8.3%;
+	top: 34.7%;
+}
+#off1:hover{
+	width: 119px;
+	left: 8%;
+	top: 33.6%;
+}
+#onpro{
+	position: absolute;
+	left: 8.3%;
+	top: 34.7%;
+	display: none;
+}
+#onpro:hover{
+	width: 119px;
+	left: 8%;
+	top: 33.6%;
+}
+
+#person{position: absolute;
+	left: 26.6%;
+	top: 34.7%;}
+#person:hover{
+	width: 119px;
+	top: 33.6%;
+	left: 26.4%
+}
+
+#off2{
+	position: absolute;
+	left: 26.6%;
+	bottom: 13.8%;
+}
+#off2:hover{
+	width: 119px;
+	left: 26.4%
+	bottom: 13.5%
+}
+
+#on1{position: absolute;
+	left: 8.3%;
+	bottom: 13.8%;}
+#on1:hover{
+	width: 119px;
+	left: 8%;
+	bottom: 13.5%;
+}
+
+#off3{
+	position: absolute;
+	right: 26.8%;
+	top: 34.7%;
+}
+#off3:hover{
+	width: 119px;
+	right: 26.4%
+	top: 33.6%;
+}
+
+#on2{position: absolute;
+	right: 8.7%;
+	top: 34.7%;
+}
+#on2:hover{
+	width: 119px;
+	right: 8.3%;
+	top: 34.6%;
+}
+#off4{position: absolute;
+	right: 8.7%;
+	top: 34.7%;
+	display: none;
+}
+#off4:hover{
+	width: 119px;
+	right: 8.3%;
+	top: 34.6%;
+}
+#outcom{
+	width: 75px;
+	height: 30px;
+	background: black;
+	font-family: 'DungGeunMo';
+	color: white;
+	border: none;
+	outline: none;
+	position: absolute;
+	bottom: 1%;
+	right: 28%;
+	text-align: center;
+	text-decoration: none;
+	padding-top: 10px;
+}
+#outcom:hover{
+	width: 80px;
+	height: 35px;
+	font-size: 18px;
+	position: absolute;
+	bottom: 0.7%;
+	right: 27.7%;
+
+}

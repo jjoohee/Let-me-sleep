@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>뭐야, 자게 해줘요!</title>
+	<style type="text/css">
+		
+@font-face { font-family: 'DungGeunMo'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+body, div, h1, p{margin: 0;}
+body{ position: relative; background: black;}
+h1, p{font-family: 'DungGeunMo'; color: white;}
+p{line-height: 22px; word-break: keep-all;}
+
+#nha{
+	position: absolute;
+	width: 400px;
+	top: 250px;
+	left: calc(50% - 200px);
+	text-align: center;
+}
+#nha:hover{
+	position: absolute;
+	font-size: 20px;
+	width: 500px;
+	top: 250px;
+	left: calc(50% - 250px);
+	text-align: center;
+	
+}
+#main{background: black;
+	width: 400px;
+	height: 400px;
+	position: absolute;
+	top: 60px;
+	left: calc(50% - 200px);
+	display: none;
+}
+
+#replay{
+	width: 80px;
+	height: 25px;
+	background: black;
+	font-family: 'DungGeunMo';
+	color: white;
+	border: none;
+	outline: none;
+	position: absolute;
+	text-align: center;
+	text-decoration: none;
+	bottom: 1%;
+	left: calc(50% - 40px);
+	padding-top: 10px;
+}
+#replay:hover{
+background: white;
+color: black;
+}
+
+	</style>
+</head>
+<body>
+	<div id="nha">
+		<p>"와 이 꽃 너무 예쁘다"</p>
+	</div>
+
+	<div id="main">
+		<p>
+		*당신은 꽃구경을 하였다. 연한 분홍빛으로 예쁘게 피어있는 걸 보니 벚꽃나무다.<br>당신은 부드럽게 부는 바람에 흩날리는 벚꽃잎을 보면서 감상에 잠겼다.<br><br>
+		"그러고보니 벚꽃의 꽃말이 뭐였더라..?"<br><br>
+		</p>
+		<p style="text-align: center; margin-top: 30px; color: gray;">**중간고사라 공부해야 해서 배드엔딩**</p>
+		<a href="index.html"><div id="replay">다시 시작</div></a>
+
+	</div>
+	<audio id="badend" loop>>
+	  <source src="falling_8bit.mp3" type="audio/mpeg" >
+	</audio>
+<script type="text/javascript">
+	nha.onclick = function(){
+		main.style.display = "block";
+		badend.play();
+	}
+</script>
+</body>
+</html>

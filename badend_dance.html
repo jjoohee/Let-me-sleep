@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>뭐야, 자게 해줘요!</title>
+	<style type="text/css">
+		
+@font-face { font-family: 'DungGeunMo'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+body, div, h1, p{margin: 0;}
+body{ position: relative; background: black;}
+h1, p{font-family: 'DungGeunMo'; color: white;}
+p{line-height: 22px; word-break: keep-all;}
+
+#nha{
+	position: absolute;
+	width: 400px;
+	top: 250px;
+	left: calc(50% - 200px);
+	text-align: center;
+}
+#nha:hover{
+	position: absolute;
+	font-size: 20px;
+	width: 500px;
+	top: 250px;
+	left: calc(50% - 250px);
+	text-align: center;
+	
+}
+#main{background: black;
+	width: 400px;
+	height: 400px;
+	position: absolute;
+	top: 60px;
+	left: calc(50% - 200px);
+	display: none;
+}
+
+#replay{
+	width: 80px;
+	height: 25px;
+	background: black;
+	font-family: 'DungGeunMo';
+	color: white;
+	border: none;
+	outline: none;
+	position: absolute;
+	text-align: center;
+	text-decoration: none;
+	bottom: 1%;
+	left: calc(50% - 40px);
+	padding-top: 10px;
+}
+#replay:hover{
+background: white;
+color: black;
+}
+
+	</style>
+</head>
+<body>
+	<div id="nha">
+		<p>"잘못 본거 아냐? 내가 그런거 아니라니까?"</p>
+	</div>
+
+	<div id="main">
+		<p>
+		*당신은 끝까지 시치미를 떼며 이 상황을 빨리 종료시키기 위해 과방 문을 나설 준비를 했다.<br><br>
+		"본인이 안했다는데 자꾸 뭐라 하는 것도 좀 그렇긴 하지. 대신, 나랑 춤배틀을 해서 이기면 보내줄게."<br><br>
+		*당신은 당황하며 얼른 문 앞에서 비키라 말했지만, 이 상황을 피할 수 없다는 사실을 깨달았다.<br><br>
+		</p>
+		<p style="text-align: center; margin-top: 30px; color: gray;">**춤배틀에 져서 배드엔딩**</p>
+		<a href="index.html"><div id="replay">다시 시작</div></a>
+
+	</div>
+	<audio id="badend" loop>>
+	  <source src="maze.mp3" type="audio/mpeg" >
+	</audio>
+<script type="text/javascript">
+	nha.onclick = function(){
+		main.style.display = "block";
+		badend.play();
+	}
+</script>
+</body>
+</html>

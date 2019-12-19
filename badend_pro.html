@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>뭐야, 자게 해줘요!</title>
+	<style type="text/css">
+		
+@font-face { font-family: 'DungGeunMo'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+body, div, h1, p{margin: 0;}
+body{ position: relative; background: black;}
+h1, p{font-family: 'DungGeunMo'; color: white;}
+p{line-height: 22px; word-break: keep-all;}
+
+#nha{
+	position: absolute;
+	width: 400px;
+	top: 250px;
+	left: calc(50% - 200px);
+	text-align: center;
+}
+#nha:hover{
+	position: absolute;
+	font-size: 20px;
+	width: 500px;
+	top: 250px;
+	left: calc(50% - 250px);
+	text-align: center;
+	
+}
+#main{background: black;
+	width: 400px;
+	height: 450px;
+	position: absolute;
+	top: 60px;
+	left: calc(50% - 200px);
+	display: none;
+}
+
+#replay{
+	width: 80px;
+	height: 25px;
+	background: black;
+	font-family: 'DungGeunMo';
+	color: white;
+	border: none;
+	outline: none;
+	position: absolute;
+	text-align: center;
+	text-decoration: none;
+	bottom: 1%;
+	left: calc(50% - 40px);
+	padding-top: 10px;
+}
+#replay:hover{
+background: white;
+color: black;
+}
+
+	</style>
+</head>
+<body>
+	<div id="nha">
+		<p>"그럼요. 친구들 하고도 두루두루 친해요."</p>
+	</div>
+
+	<div id="main">
+		<p>
+		*당신은 뿌듯한 표정으로 교수님을 바라보았다.<br><br>
+		"정말? 마침 잘 됐다. 우리 수업 애들에게 긴급공지할게 있었는데, 네가 친구들에게 좀 전해주겠니? 이왕이면 카톡방도 만들어주었으면 좋겠구나.*^^*"<br><br>
+		*당신은 뒤늦게 변명을 해보았지만, 이 상황을 수습할 수 없다는 사실을 깨달았다.
+		</p>
+		<p style="text-align: center; margin-top: 30px; color: gray;">
+		**친구들에게 공지를 전달하느라 배드엔딩**
+		</p>
+		<a href="index.html"><div id="replay">다시 시작</div></a>
+
+	</div>
+	<audio id="badend">
+	  <source src="sad_minuet.mp3" type="audio/mpeg">
+	</audio>
+<script type="text/javascript">
+	nha.onclick = function(){
+		main.style.display = "block";
+		badend.play();
+	}
+</script>
+</body>
+</html>

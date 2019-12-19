@@ -1,0 +1,147 @@
+
+@font-face { font-family: 'DungGeunMo'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+body, div, h1, p{margin: 0;}
+body{ position: relative; background: black;}
+h1, p{font-family: 'DungGeunMo'; color: white;}
+p{line-height: 22px;}
+
+#map3{background: url('../img/recess.png'); width: 600px; height: 450px;
+	position: absolute;
+	top: 60px;
+	left: calc(50% - 300px);
+	display: none;
+}
+
+#flo2{
+	position: absolute;
+	top: 9.4%;
+	left: 15.1%;
+
+}
+
+#flo2:hover{
+	width: 197px;
+	top: 9%;
+	left: 14.8%;
+}
+
+#win{position: absolute;
+	top: 9.4%;
+	right: 15.3%;
+}
+#win:hover{
+	width: 197px;
+	top: 9%;
+	right: 14.9%;
+}
+
+#sofa1{
+	position: absolute;
+	top: 32.4%;
+	left: 15.3%;
+
+
+}
+#sofa1:hover{
+	width: 195px;
+	top: 32%;
+	left: 15%;
+}
+#sofa2{
+	position: absolute;
+	top: 32.4%;
+	right: 15.5%;
+
+}
+#sofa2:hover{
+	width: 195px;
+	top: 32%;
+	right: 15%;
+	
+}
+#sofa3{
+	position: absolute;
+	top: 32.4%;
+	right: 15.5%;
+	display: none;
+
+}
+#sofa3:hover{
+	width: 195px;
+	top: 32%;
+	right: 15%;
+	
+}
+#desk1{
+	position: absolute;
+	right: 15.7%;
+	bottom: 13.4%;
+
+}
+#desk1:hover{
+	width: 145px;
+	right: 15%;
+	bottom: 13.4%;
+
+}
+
+#desk2{
+	position: absolute;
+	right: 38.7%;
+	bottom: 13.4%;
+
+}
+#desk2:hover{
+	width: 145px;
+}
+
+#desk3{
+	position: absolute;
+	right: 38.7%;
+	bottom: 13.4%;
+	display: none;
+}
+
+#desk3:hover{
+	width: 145px;
+}
+
+.outrescl{
+width: 75px;
+height: 30px;
+background: black;
+font-family: 'DungGeunMo';
+color: white;
+border: none;
+outline: none;
+position: absolute;
+text-align: center;
+text-decoration: none;
+bottom: 1%;
+left: 22.4%;
+padding-top: 10px;
+}
+.outrescl:hover{
+	width: 80px;
+	height: 35px;
+	font-size: 18px;
+	bottom: 0.7%;
+	right: 27.7%;
+
+}
+#outres2{
+	display: none;
+}
+
+#fri2{
+	position: absolute;
+	bottom: 15%;
+	left: 23%;
+	display:none;
+}
+#fri2:hover{
+	width: 67px;
+	left: 22.5%;
+	bottom: 15%;
+}
